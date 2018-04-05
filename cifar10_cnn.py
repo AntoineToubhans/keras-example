@@ -118,7 +118,7 @@ def train(params):
                             steps_per_epoch=x_train.shape[0],
                             epochs=epochs,
                             validation_data=(x_test, y_test),
-                            verbose=2)
+                            verbose=1)
 
     outputs_dir = os.getenv('VH_OUTPUTS_DIR', './')
     output_file = os.path.join(outputs_dir, 'my_model.h5')
